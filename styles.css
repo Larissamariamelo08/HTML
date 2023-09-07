@@ -1,0 +1,233 @@
+body {
+    animation: gradiente 5s ease infinite;
+    background: linear-gradient(-45deg, #13e370, #e73c7e, #23a6d5) no-repeat;
+    background-size: 400% 400%;
+    height: 97.8vh;
+    font-size: 100%;
+
+}
+
+footer {
+    margin: 1% 0%;
+    display: flex;
+    justify-content: center;
+    font-size: 1.5vw;
+    color: #ffffff;
+}
+
+@keyframes gradiente {
+    0% {
+        background-position: 0% 20%;
+    }
+
+    50% {
+        background-position: 100% 100%;
+    }
+
+
+    100% {
+        background-position: 10% 10%;
+    }
+}
+
+div#fundo {
+    /*foto de fundo do site*/
+    background: url(fundo-PhotoRoom.png-PhotoRoom\ \(1\).png) no-repeat;
+    background-size: 95% 100%;
+    height: 100%;
+    width: 100%;
+}
+
+.conteudo {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 5% 0% 5% 0%;
+
+}
+
+
+img#inicial {
+    max-width: 80%;
+    max-height: 80%;
+}
+
+.esq {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #e73c7e92;
+    border-radius: 20px 0% 0% 20px;
+    box-shadow: 0px 4px 8px 0px rgba(150, 19, 150, 0.188);
+    backdrop-filter: blur(10px);
+    width: 30%;
+
+}
+
+.dir {
+    padding: 5% 20% 5% 13%;
+    border-radius: 0px 20px 20px 0px;
+    box-shadow: 0px 4px 8px 0px rgba(150, 19, 150, 0.188);
+    backdrop-filter: blur(10px);
+    background-color: #ffffff31;
+
+}
+
+form {
+    flex-direction: column;
+    font-family: 'Zilla Slab', serif;
+    background-color: #02dfdffe;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.974);
+    border-radius: 3%;
+    padding: 10% 80% 20% 80%;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+    align-items: center;
+}
+
+
+h1#dir {
+    /*Login*/
+    font-family: 'Lobster', cursive;
+    font-size: 3vw;
+    color: #ffffff;
+    text-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.289);
+    position: relative;
+}
+
+h1#dir::before {
+    content: "";
+    position: absolute;
+    height: 0.3vw;
+    width: 3.1vw;
+    bottom: 3px;
+    left: 0;
+    border-radius: 8px;
+    background: #ff1a72;
+}
+
+h1#esq {
+    font-family: 'Lobster', cursive;
+    font-size: 1.5vw;
+    color: #ffffff;
+    text-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.974);
+    text-align: center;
+    position: relative
+}
+
+input {
+    width: 16.6vw;
+    height: 3.75vw;
+    border-radius: 3%;
+    border: 4px solid #ffffff;
+    box-shadow: 4px 4px 0px #0000004a;
+    font-family: 'Zilla Slab', serif;
+    font-size: 1.2vw;
+}
+
+
+
+img {
+    width: 6 0%;
+}
+
+button {
+    color: rgb(255, 255, 255);
+    background-color: rgb(255, 0, 102);
+    border-radius: 10px;
+    margin: 0% 5% 0% 5%;
+    margin-top: 10px;
+    cursor: pointer;
+    transition-duration: 0.1s;
+    text-align: center;
+    width: 12.5vw;
+    height: 2.5vw;
+}
+
+button:hover {
+    background-color: rgb(255, 0, 85);
+    box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+}
+
+
+@media (max-width: 700px) {
+
+    body {
+
+        background-size: 300% 400%;
+        height: 97.6vh;
+        font-size: 100%;
+
+    }
+
+    form {
+        padding: 3% 20% 3% 20%;
+
+    }
+
+    div#fundo {
+
+        background: url(fundo-PhotoRoom.png-PhotoRoom\ \(1\).png) repeat fixed center;
+        background-size: 96% 40%;
+    }
+
+    .conteudo {
+
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .dir {
+        border-radius: 0px 0px 20px 20px;
+        padding: 6% 16.4% 6% 16.4%;
+        width: 37%;
+        height: 5%;
+    }
+
+    .esq {
+        border-radius: 20px 20px 0px 0px;
+        width: 70%;
+
+    }
+
+    h1#esq {
+        font-size: 3vw;
+    }
+
+
+
+    img {
+        width: 40%;
+        height: 40%;
+    }
+
+    button {
+        font-size: 10px;
+        width: 50%;
+        height: 30px;
+    }
+
+    div#fundo {
+        height: 100%;
+        width: 100%;
+    }
+
+    input {
+        width: 70%;
+        height: 30%;
+        font-size: 2vw;
+    }
+
+    footer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 2.6vw;
+
+
+    }
+}
